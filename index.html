@@ -3,30 +3,245 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Browser extensions manager UI</title>
 </head>
 <body>
   <div class="main">
     <div class="title-bar">
-      <img class="logo" src="logo.svg" alt="logo">
-      <button type="button" class="light-dark"><img src="icon-moon.svg"> </button>
+      <img class="logo" src="Imgs/logo.svg" alt="logo">
+      <button type="button" class="light-dark"><img src="imgs/icon-moon.svg"> </button>
     </div>
     <main>
       <div class="heading">
         <h1>Extensions List</h1>
         <div class="action-btns">
-          <button type="button" class="all">All</button>
-          <button type="button" class="active">Active</button>
-          <button type="button" class="inactive">Inactive</button>
+          <button class="all">All</button>
+          <button class="active">Active</button>
+          <button class="inactive">Inactive</button>
         </div>
       </div>
-      <section>
-
+      <section class="grid-container">
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-devlens.svg" class="ext-image" alt="'DevLens-Icon">
+            </div>
+            <div class="card-info">
+            <h2 class="card-title">DevLens</h2>
+            <p class="description">Quickly inspect page layouts and visualize element boundries.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-style-spy.svg" class="ext-image" alt="StyleSpy-Icon">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">StyleSpy</h2>
+              <p class="description">Instantly analyze and copy CSS from any webpage element.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-speed-boost.svg" class="ext-image" alt="SpeedBoost-Icon">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">SpeedBoost</h2>
+              <p class="description">Optimize browser resource usage to accelerate page loading.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-json-wizard.svg" class="ext-image" alt="JSONWizard-Icon">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">JSONWizard</h2>
+              <p class="description">Formats, validates, and prettifies JSON responses in-browser.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-tab-master-pro.svg" class="ext-image" alt="tabMasterPro-Icon">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">TabMaster Pro</h2>
+              <p class="description">Organizes browser tabs into groups and sections.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-viewport-buddy.svg" class="ext-image" alt="ViewportBuddy-Icon">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">ViewportBuddy</h2>
+              <p class="description">Simulates various screen resolutions dorectly within the browser.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-markup-notes.svg" class="ext-image" alt="MarkupNotes-Icon">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Markup Notes</h2>
+              <p class="description">Enables annotation and ntes directly onto webpages for collaborative debugging.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-grid-guides.svg" class="ext-image" alt="GridGuides-Icon">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">GridGuides</h2>
+              <p class="description">Overlay customizable grids and alignent guides on any webpage.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-palette-picker.svg" class="ext-image" alt="PalettePicker-Icon">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Palette Picker</h2>
+              <p class="description">Instantly extracts color palettes from any webpage.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-link-checker.svg" class="ext-image" alt="LinkChecker-Icon">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Link Checker</h2>
+              <p class="description">Scans and highlights broken links on any page.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-dom-snapshot.svg" class="ext-image" alt="DOMSnapshots-Icon">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">DOM Snapshots</h2>
+              <p class="description">Capture and export DOM structures quickly.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="ext-cards">
+          <div class="card-top">
+            <div class="icon">
+              <img src="Imgs/logo-console-plus.svg" class="ext-image" alt="ConsolePlus-Icon">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">ConsolePlus</h2>
+              <p class="description">Enhanced developer console with advanced filtering and logging.</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <button class="remove-btn">Remove</button>
+            <label class="switch">
+              <imput type="checkbox" checked></imput>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
       </section>
     </main>
   </div>
